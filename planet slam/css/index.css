@@ -8,6 +8,7 @@
 
 body{
     background-color: #00A9B3;
+    overflow-x: hidden;
 }
 
 a{
@@ -72,6 +73,7 @@ a{
     justify-content: space-around;
     width: 70%;
     min-width: 300px;
+    max-width: 1200px;
     color: #00A9B3;
 }
 
@@ -79,20 +81,15 @@ a{
     padding: 4px ;
 }
 
-main{
-    margin-bottom: 0px;
-}
-
 .background{
     width: 100%;
 }
 
 .search{
+    position: absolute;
     display: flex;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: flex-end;
+    width: 100%;
+    justify-content: center;
     margin-top: -23%;
 }
 
@@ -101,6 +98,7 @@ main{
     height: 40px;
     width: 50%;
     min-width: 220px;
+    max-width: 530px;
     color: #00A9B3;
 }
 
@@ -110,15 +108,100 @@ main{
     padding: 0 3px;
 }
 
-.main-decoration{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+
+main{
+    margin: 0 auto;
+    padding-bottom: 500px;
 }
 
+.container{
+    margin: 0 auto;
+    width: 70%;
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: white;
+}
+
+.container > div{
+    padding: 5px;
+}
+
+.sales h1{
+    margin-top: 30px;
+    background-color: #ff6600ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sale-card{
+    background-color: #000000d2;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    
+    border-radius: 5px;
+}
+
+.sale-card p{
+    align-self: center;
+    padding: 10px;
+}
+
+.sale-card img{
+    width: 40%;
+    min-width: 150px;
+}
+
+.ad img{
+    width: 70%;
+    height: 80%;
+    position: sticky;
+    min-width: 200px;
+    top: 8px;
+}
+
+.ad{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.content{
+    background-color: #f4f4f4;
+    width: 100;
+    padding: 90px 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.basquete-cards{
+    width: 70%;
+    min-width: 300px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.basquete-cards div{
+    width: 55%;
+    margin: 0 10px;
+    background-color: #ff6600ff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
 footer{
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -141,7 +224,7 @@ footer{
     }
 
     .nav-list{
-        position: absolute;
+        position: fixed;
         top: 12vh;
         right: 0;
         width: 50vw;
@@ -165,5 +248,18 @@ footer{
     .nav-list2{
         display: grid;
         grid-template-areas: "1 2 3 4";
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .ad{
+        position: relative;
+        width: 100v;
+    }
+
+    .ad img{
+        width: 100%;
     }
 }
