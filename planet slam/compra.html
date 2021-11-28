@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar item</title>
+    <link rel="stylesheet" href="css/compra.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="img/planetslam 4.png" class="navbar-decoration">
+            <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="mobile-menu" id="texto">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul id="nav-list">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Atendimento</a></li>
+                <li><a href="">Carrinho</a></li>
+                <li><a href=""><img src="img/icon/person.png" alt="profile picture"></a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-secondary">
+            <ul class="nav-list2">
+                <li>Tênis</li>
+                <li>Camisetas</li>
+                <li>Jaqueta</li>
+                <li>Bolas</li>
+                <li>Bonés</li>
+                <li>Acessórios</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product">
+                <img src="img/Produto/camisa.jpeg" id="img-product">
+                <img src="img/Produto/camisa2.jpeg" alt="" id="img-product2">
+                <img src="img/Produto/camisa3.jpeg" alt="" id="img-product3">
+                <div class="navigaton">
+                    <button onclick="changeproduct1()"><img src="img/Produto/camisa.jpeg" alt=""></button>
+                    <button onclick="changeproduct2()"><img src="img/Produto/camisa2.jpeg" alt=""></button>
+                    <button onclick="changeproduct3()"><img src="img/Produto/camisa3.jpeg" alt=""></button>
+                </div>
+            </div>
+            <div class="info-product">
+                <h2>Regata Nike Los Angeles Lakers LeBron James</h2>
+                <div id="estrelas">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)">
+                        <img src="img/star0.png" id="s1"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(2)">
+                        <img src="img/star0.png" id="s2"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(3)">
+                        <img src="img/star0.png" id="s3"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(4)">
+                        <img src="img/star0.png" id="s4"></a>
+                        
+                        <a href="javascript:void(0)" onclick="Avaliar(5)">
+                        <img src="img/star0.png" id="s5"></a>
+                </div>
+                <div id="classificacao">
+                    <p id="rating">0</p>
+                    </div>
+                <div class="size">
+                    <button id="size1">P</button>
+                    <button id="size2">M</button>
+                    <button id="size3">G</button>
+                </div>
+                <h1>R$400.00</h1>
+                <button id="button-buy">Comprar</button>
+                <div class="frete">
+                    <hr>
+                    <div>
+                        <p>Calcular frete:</p>
+                        <div>
+                            <input type="password" placeholder="Endereço" id="endereco">
+                            <button>Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-secondary">
+            <ul class="nav-list2">
+                <li><h2>Avaliações</h2></li>
+            </ul>
+        </nav>
+        <div class="container2">
+            <div class="valuation">
+                <div>
+                    <h1>4/5</h1>
+                    <img src="img/star1.png" alt="">
+                </div>
+                <h2>Quase perfeito</h2>
+            </div>
+            <div class="comments">
+                <div class="user">
+                    <h3>username</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="user">
+                    <h3>username</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="user">
+                    <h3>username</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="js/nav-list.js"></script>
+<script src="js/change button.js"></script>
+<script src="js/funcoes.js"></script>
+</body>
+</html>

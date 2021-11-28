@@ -27,14 +27,14 @@ a{
     height: 10vh;
 }
 
-.nav-list{
+#nav-list{
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.nav-list a{
+#nav-list a{
     padding: 0 10px;
 }
 
@@ -306,9 +306,13 @@ footer{
 }
 
 @media (max-width: 874px) {
-    .nav-list{
-        position: fixed;
-        top: 12vh;
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav-list{
+        position: absolute;
+        top: 10vh;
         right: 0;
         width: 50vw;
         height: 42vh;
@@ -321,7 +325,7 @@ footer{
         transform: translateX(100%);
     }
 
-    .nav-list li{
+    #nav-list li{
         margin-left: 0;
         padding: 0;
     }
