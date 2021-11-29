@@ -142,7 +142,7 @@ main{
     border-radius: 5px;
 }
 
-.sale-card{
+.sale-card a{
     background-color: #000000d2;
     margin-top: 10px;
     color: white;
@@ -150,8 +150,11 @@ main{
     flex-direction: row;
     text-align: center;
     align-content: center;
-    
     border-radius: 5px;
+}
+
+.sale-card a:hover{
+    background-color: #000000;
 }
 
 .sale-card p{

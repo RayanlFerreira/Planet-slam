@@ -158,6 +158,10 @@ a{
     height: 40px;
 }
 
+.info-product > button:hover{
+    background-color: #01767c;
+}
+
 .frete{
     margin-top: 8px;
 

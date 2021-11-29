@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #00A9B3;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+
+#seta{
+    color: white;
+    font-size: 2rem;
+    padding-left: 9px;
+    padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#voltar{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #ff6600ff;
+    padding-top: 15px;
+    height: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    justify-content: space-around;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -100px;
+    width: 30%;
+    max-width: 400px;
+}
+
+h3{
+    margin-top: 40px;
+}
+
+input{
+    background-color: #00A9B3;
+    border: 1px solid white;
+}
+
+input[type=text]{
+    width: 100%;
+    color: white;
+    height: 35px;
+    border-radius: 3px;
+}
+
+input[type=password]{
+    width: 100%;
+    color: white;
+    height: 35px;
+    border-radius: 3px;
+}  
+
+input[type=radio]{
+    width: 15px;
+    height:15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}   
+
+#value{
+    margin-left: 50px;
+}
+
+#radio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}     
+.lnr-eye {
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}  
+
+#eye{
+    width: 0;
+    margin-left: -30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#alterar:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+#alterar{
+    background-color: white;
+    color: #00A9B3;
+    border: 1px solid #00A9B3;
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.senha{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-decoration{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1222px) {
+    .img-cadastro{
+        display: none;
+    }
+
+    .container{
+        padding-top: 60px;
+        margin-bottom: 600px;
+        margin-left: -300px;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 786px){
+    #voltar{
+        position: fixed;
+        left: 0;
+    }
+    button{
+        margin-bottom: 100px;
+    }
+}
