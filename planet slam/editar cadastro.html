@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar dados</title>
+    <!-- biblioteca de ícones--> 
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Alterar Usuário</h1>
+
+    <h3> NOME COMPLETO </h3>
+    <input type="text" placeholder="Matheus do Nascimento">
+    
+    <h3>E-MAIL </h3>
+    <input type="text" placeholder="mns9@discente.ifpe.edu.br">
+  
+    <h3> GÊNERO </h3>
+    <input type="radio" name="genero" value="f"> <span>Feminino</span>
+    <input type="radio" name="genero" value="m" checked="s"> <span>Masculino</span>
+
+    <h3> SENHA </h3> 
+    <input type="password" id="password" placeholder="********">
+    <span class="lnr lnr-eye"></span> 
+    <h3> CPF </h3> 
+    <input type="text" placeholder="000000000-00"><br>
+
+  <button id="alterar" onclick="alert()">Alterar dados</button><br>
+
+  <a href="login.html"><button id="excluir">Excluir Usuário</button></a>
+  <span class="lnr lnr-chevron-left" id="seta"></span>
+  <div id="box"><span id="text"></div></button>
+  </main>
+  <img src="img/left.jpeg" class="footer-decoration">
+
+  <img src="img/imagem1.jpeg" id="imagem">
+
+  <script src="js/script.js"></script>
+</body>
+</html>

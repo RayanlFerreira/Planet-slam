@@ -1,0 +1,122 @@
+body{
+        background-color: #00A9B3;
+        overflow-x: hidden;
+    }
+main{
+    margin-left: 300px;
+    margin-top: 50px;
+}
+input{
+    background-color: #00A9B3;
+    border: 1px solid white;
+    }
+input[type=text]{
+    width: 250px;
+    color: white;
+    height: 35px;
+    border-radius: 3px;
+}
+input[type=password]{
+    width: 250px;
+    color: white;
+    height: 35px;
+    border-radius: 3px;
+}  
+input[type=radio]{
+    width: 15px;
+    height:15px;
+}   
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}     
+.lnr-eye {
+    cursor: pointer;
+}  
+    
+h1{
+    font-size: 30px;
+    color: white;     
+}
+h3{
+color: white;
+}
+
+#alterar{
+background-color: white;
+color: #00A9B3;
+border: 1px solid #00A9B3;
+width: 250px;
+height: 35px;
+border-radius: 3px;
+margin-top: 20px;
+}
+#excluir{
+background-color: #00A9B3 ;
+color: white;
+border: 1px solid white;
+width: 250px;
+height: 35px;
+border-radius: 3px;
+margin-top: 20px;
+}
+span{
+    color: white;
+
+}
+.footer-decoration{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#imagem{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#seta{
+    position: absolute;
+    color:white ;
+    font-size: 40px;
+    top: 45px;
+    left: 220px;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    color:#00A9B3;
+}
+@media (max-width: 1300px) {
+    main{
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    #seta{
+        left: 40px;
+    }
+}
+@media (max-width: 860px) {
+    main{
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    #imagem{
+        width: 0%;
+        height: 0%;
+    }
+}
+@media (max-width: 400px) {
+    main{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    #seta{
+        left: 20px;
+    }
+}
+
